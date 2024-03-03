@@ -227,8 +227,8 @@ body {
 }
 
 .project-title h3 {
-    font-size: 55px;
-    text-decoration: underline;
+    font-size: 60px;
+    /* text-decoration: underline; */
     text-align: center;
     margin-bottom: 20px;
 }
@@ -257,7 +257,7 @@ body {
 }
 
 .card-item {
-    box-shadow: 4px 4px 1px rgb(216, 147, 255);
+    box-shadow: 4px 4px 1px rgb(0, 0, 0);
     text-align: center;
     background-color: #f0f0f0;
     padding: 10px;
@@ -276,15 +276,15 @@ body {
 }
 
 .card-item img {
-    width: 450px;
-    height: 350px;
+    width: 400px;
+    height: 300px;
     border-radius: 8px;
 }
 
 .challenge-title h3 {
     margin-top: 100px;
-    font-size: 55px;
-    text-decoration: underline;
+    font-size: 60px;
+    /* text-decoration: underline; */
     color: #fff;
     text-align: center;
     margin-bottom: 20px;
