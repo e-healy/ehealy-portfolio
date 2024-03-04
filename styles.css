@@ -115,7 +115,7 @@ body {
 .hero-container {
     background-color: #fff;
     color: rgb(51, 16, 75);
-    padding-bottom: 280px;
+    padding-bottom: 100px;
 } 
 
 .hero-title {
@@ -204,6 +204,109 @@ body {
     transform: scale(1, 1);
 }
 
+/* About Section */
+.about-container {
+    padding: 30px 0 100px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(40, 12, 59);
+    background-color: #fff;
+}
+
+.about-title {
+    padding-top: 100px; 
+    padding-bottom: 30px;
+}
+
+.about-title h3 {
+    font-size: 60px;
+    color: rgb(53, 15, 78);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-title p {
+    text-align: center;
+    font-style: italic;
+    font-weight: 600;
+    margin: 0 60px;
+    color: rgb(53, 15, 78);
+    font-size: 25px;
+}
+
+.about-title p span {
+    background-color: rgba(135, 31, 204, 0.2);
+}
+
+.about-container .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    font-size: 20px;
+    margin: 0 60px;
+}
+
+.about-icons {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-icons img {
+    border: 2px solid rgba(121, 112, 128, 0.2);
+    width: 90px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.about-item {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-item a {
+    background-color: rgba(135, 31, 204, 0.2);
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.skillset-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+    color: rgb(57, 16, 85);
+    background-color: #fff;
+}
+
+.skillset-container h3 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.skillset-content {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skillset-content p {
+    font-size: 18px;
+    background-color: rgba(135, 31, 204, 0.2);
+    padding: 7px;
+    border-radius: 4px;
+}
+
 /* Project Section */
 
 .project-wrapper {
@@ -211,7 +314,7 @@ body {
 }
 
 .project-container {
-    padding: 30px;
+    padding: 30px 0 100px;
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
@@ -222,6 +325,8 @@ body {
 .project-title {
     padding-top: 100px; 
     padding-bottom: 30px;
+    border-top-left-radius: 80%;
+    border-top-right-radius: 80%;
     background-color: rgb(40, 12, 59);
     color: #fff;
 }
@@ -235,12 +340,12 @@ body {
 
 .project-title p {
     text-align: center;
+    padding: 5px;
     font-size: 23px;
 }
 
 .project-title span {
     background: rgba(135, 31, 204, 0.3);
-
 }
 
 .grid {
@@ -302,22 +407,22 @@ body {
     border-radius: 6px;
 }
 
-#codeBtn1, #codeBtn2, #codeBtn3, #codeBtn4 {
+#codeBtn1, #codeBtn2 {
     background-color:#e0c3fc;
     transition: 0.5s;
 }
 
-#liveBtn1, #liveBtn2, #liveBtn3, #liveBtn4 {
+#liveBtn1, #liveBtn2 {
     background-color:#e0c3fc;
     transition: 0.5s;
 }
 
-#codeBtn1:hover, #codeBtn2:hover, #codeBtn3:hover, #codeBtn4:hover {
+#codeBtn1:hover, #codeBtn2:hover {
     background-color: #b667ff;
     transition: 0.5s;
 }
 
-#liveBtn1:hover, #liveBtn2:hover, #liveBtn3:hover, #liveBtn4:hover {
+#liveBtn1:hover, #liveBtn2:hover {
     background-color: #b667ff;
     transition: 0.5s;
 }
@@ -346,7 +451,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 3px solid rgba(135, 31, 204, 0.7);
+    border-bottom: 2px solid rgba(66, 14, 100, 0.99);
 }
 
 .modal-header .modal-title {
@@ -430,6 +535,51 @@ body {
     opacity: 1;
     pointer-events: all;
 }
+
+.footer {
+    margin: 0 30px;
+    padding: 50px;
+    display: flex;
+    font-size: 19px;
+    justify-content: space-between;
+    color: rgb(57, 17, 83);
+    font-weight: 500;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links a {
+    position: relative;
+    transition: all 0.5s;
+    padding-bottom: 4px;
+    cursor: pointer;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.footer-links a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.2rem;
+    left: 0;
+    bottom: 0;
+    background-color: #b667ff;
+    transform: scale(0, 1);
+    transition: transform 0.5s ease;
+} 
+
+.footer-links a:hover::after {
+    transform: scale(1, 1);
+}
+
 
 
 @media (max-width: 650px) {
