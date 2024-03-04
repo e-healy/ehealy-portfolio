@@ -63,14 +63,35 @@
             <div class="project-title">
                 <h3>PROJECTS</h3>
                 <p>All websites built with  <span>love</span>, <span>code</span>, and  <span>quirk</span>.</p>
-                <p>Click on the cards to learn more:</p>
+                <p>Click on the card images to learn more:</p>
             </div>
             <div class="project-wrapper">
                 <div class="project-container">
                     <div class="grid">
                         <div class="cards">
                             <div class="card-item">
-                                <img src="./img/wanderingtheW.jpeg" alt="Wandering the World">
+                                <button class="modal-btn" data-modal-target="#modal"><img src="./img/wanderingtheW.jpeg" alt="Wandering the World"></button>
+                                <div class="modal" id="modal">
+                                    <div class="modal-header">
+                                        <div class="modal-title">WANDERNG THE WORLD</div>
+                                        <button data-close-button class="close-btn">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Wandering the World is a website for all of your travel needs. As the <span>winner of Code First Girl's final project challenge</span>, we were tasked to create an interactive website that included a taste of what we liked to do in our spare time. And who doesn't love a holiday?</p>
+                                        <p>This website uses three core web technologies - HTML, CSS, and Javascript. Bootstrap is used to create the fundamental parts within the landing page's wireframe, such as a carousel of locations, an offcanvas navbar, and destination cards to explore.</p>
+                                        <p>It also includes an <span>interactive map finder</span>, <span>contact form</span>, <span>destination quizzes</span> and <span>fun facts</span>!</p>
+                                    </div>
+                                    <div class="modal-tags">
+                                        <p>HTML</p>
+                                        <p>CSS</p>
+                                        <p>JavaScript</p>
+                                        <p>Bootstrap</p>
+                                    </div>
+                                    <div class="github-link">
+                                        <a href="https://github.com/e-healy/CFG_project"><i class='bx bxl-github'></i></a>
+                                    </div>
+                                </div>
+                                <div id="overlay"></div>
                                 <div class="card-content">
                                     <h4>Wandering the World</h4>
                                 </div>
@@ -80,9 +101,19 @@
                                 </div>
                             </div>
                             <div class="card-item">
-                                <img src="./img/autowhizz.jpg" alt="Auto Whiz">
+                                <button class="modal-btn" data-modal-target="#modal"><img src="./img/autowhizz.jpg" alt="Auto Whiz"></button>
                                 <div class="card-content">
                                     <h4>Auto Whiz</h4>
+                                    <div class="modal" id="modal">
+                                        <div class="modal-header">
+                                            <div class="modal-title">Auto Whiz</div>
+                                            <button data-close-button class="close-btn">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid nobis at nisi hic architecto enim corrupti explicabo consectetur! Dolores iste voluptate explicabo voluptatem aperiam aspernatur corrupti, ipsa nihil reiciendis, fugit odio illo voluptas dolorum soluta eaque laborum quaerat deserunt, quod quidem obcaecati temporibus fuga inventore! Sint aliquam expedita veritatis iste cumque commodi rerum blanditiis maxime voluptatum modi nihil corrupti molestiae quas inventore, temporibus repellat voluptate nisi sapiente placeat quasi nostrum! Debitis voluptates odit ut unde eum quia dicta explicabo natus.</p>
+                                        </div>
+                                    </div>
+                                    <div id="overlay"></div>
                                 </div>
                                 <div class="card-btn-container">
                                     <button class="card-btn" id="codeBtn1">Code</button>
@@ -90,25 +121,7 @@
                                 </div>
                             </div> 
                         </div>
-                    </div>
-                    <div class="challenge-title">
-                        <h3>CHALLENGES</h3>
-                        <p>I like to challenge myself as well as grow my skillset with <span>frontend mentor</span>, have a browse at some of my completed challenges below!</p>
-                    </div>
-                    <div class="grid">
-                        <div class="cards">
-                            <div class="card-item">
-                                <img src="./img/frontendchallenges.jpg" alt="Frontend Mentor Challenges">
-                                <div class="card-content">
-                                    <h4>Frontend Mentor Challenges</h4>
-                                </div>
-                                <div class="card-btn-container">
-                                    <button class="card-btn" id="codeBtn1">Code</button>
-                                    <button class="card-btn" id="liveBtn1" >Live</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
+                    </div>  
                 </div>
             </div>
         </section>
