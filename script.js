@@ -49,7 +49,28 @@ overlay.addEventListener('click', () => {
     });
 });
 
-/* Clock */
+// Nav Links
+const navLinkEls = document.querySelectorAll(".nav-link");
+const sectionEls = document.querySelectorAll(".section");
+
+let currentSection = 'about'
+window.addEventListener('scroll', () => {
+    sectionEls.forEach(sectionEl => {
+        if (window.scrollY >= sectionEl.offsetTop) {
+            currentSection = sectionEl.id;
+        }
+    });
+
+    navLinkEls.forEach(navLinkEl => {
+        if (navLinkEl.href.includes(currentSection)) {
+            document.querySelector('.active').classList.remove('.active');
+            navLinkEl.classList.add('active');
+        }
+    });
+});
+
+
+// Clock 
 let hrs = document.getElementById("hrs");
 let min = document.getElementById("min");
 
@@ -59,3 +80,16 @@ setInterval(() =>{
     hrs.innerHTML = (currentTime.getHours()<10?"0":"") + currentTime.getHours();
     min.innerHTML = (currentTime.getMinutes()<10?"0":"") + currentTime.getMinutes();
 }, 1000);
+
+// Scroll to top button
+scrollToTopBtn = document.getElementById("scroll-btn");
+
+scrollToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    });
+});
+
+

@@ -23,13 +23,13 @@
         <nav class="nav">
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a href="#About" class="nav-link">About</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#Projects" class="nav-link">Projects</a>
+                    <a href="#projects" class="nav-link">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#Contact" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -42,7 +42,7 @@
 </header>
 <body> 
     <main>
-        <section class="hero">
+        <section class="section" class="hidden">
             <div class="hero-container">
                 <div class="hero-item">
                     <div class="hero-title">
@@ -63,7 +63,7 @@
             </div>
         </section>
 
-        <section class="about-section" id="about">
+        <section class="section" class="hidden" id="about">
             <div class="about-wrapper">
                 <div class="about-container">
                     <div class="about-title">
@@ -118,7 +118,7 @@
             </div>
         </section>
         
-        <section class="projects-section" id="projects">
+        <section class="section" class="hidden" id="projects">
             <div class="project-title">
                 <h3>PROJECTS</h3>
                 <p>All websites built with  <span>love</span>, <span>code</span>, and  <span>quirk</span>.</p>
@@ -185,7 +185,7 @@
             </div>
         </section>
 
-        <section class="contact" id="contact">
+        <section class="section" class="hidden" id="contact">
             <div class="contact-container">
                 <div class="contact-title">
                     <h3>CONTACT</h3>
@@ -207,34 +207,37 @@
                     <form>
                         <div class="form-name">
                             <label for="name">Name</label>
-                            <input type="text" id="name" required>
+                            <input type="text" id="name" autocomplete="given-name" required>
                         </div>
                         <div class="form-email">
                             <label for="email">Email</label>
-                            <input type="email" id="email" required>
+                            <input type="email" id="email" autocomplete="given-email" required>
                         </div>
                         <div class="form-message">
                             <label for="message">Message</label>
-                            <textarea id="message" rows="5" placeholder="How can I help?"></textarea>
+                            <textarea id="message" rows="5" placeholder="How can I help?" autocomplete="off"></textarea>
                         </div>
                         <div class="form-btn">
                             <button type="submit">Send</button>
                         </div>
                     </form>
                 </div>
-
             </div>
-
         </section>
+
+        <div class="scroll-to-top">
+            <button id="scroll-btn"><i class='bx bx-up-arrow-alt'></i></button>
+            <p>Back to top</p>
+        </div>
 
         <footer class="footer">
             <div class="footer-item">
                 <p>© 2024 Ellie Healy. All rights reserved.</p>
             </div>
             <div class="footer-links">
-                <a href="#">Github</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Codepen</a>
+                <a href="https://github.com/e-healy">Github</a>
+                <a href="https://www.linkedin.com/in/ellie-healy/">LinkedIn</a>
+                <a href="https://codepen.io/ellieh9">Codepen</a>
             </div>
         </footer>
     </main>

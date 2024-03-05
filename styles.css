@@ -14,6 +14,10 @@ a {
     color: inherit;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Playfair Display", sans-serif;
     min-height: 100vh;
@@ -215,7 +219,7 @@ body {
 }
 
 .about-title {
-    border-top: 2px solid rgb(119, 37, 173);
+    /* border-top: 2px solid rgb(119, 37, 173); */
     padding-top: 100px; 
     padding-bottom: 30px;
 }
@@ -600,7 +604,7 @@ body {
 } */
 
 .contact-container {
-    padding: 30px 0 100px;
+    padding: 30px 0 30px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -622,7 +626,7 @@ body {
 
 .contact-title p {
     font-style: italic;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0 60px;
     color: rgb(53, 15, 78);
     font-size: 25px;
@@ -693,10 +697,16 @@ form {
     align-items: center;
 }
 
-form h4 {
+.form-name, .form-email, .form-message {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
     color: rgb(40, 12, 59);
     font-size: 20px;
     text-align: start;
+    font-weight: bold;
 }
 
 form input, form textarea {
@@ -724,26 +734,39 @@ form button {
     border-radius: 30px;
 }
 
-/* form {
-    border: 1px solid rgb(58, 17, 85);
-    box-shadow: 3px 3px 1px rgb(58, 17, 85);
-    background-color: rgba(135, 31, 204, 0.2);
+/* Scroll to top button */
+.scroll-to-top {
     display: flex;
-    justify-content: center;
-    text-align: center;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: column;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 10px;
-    gap: 20px;
+    justify-content: center;
+    align-items: center; 
+}
 
-} */
+.scroll-to-top #scroll-btn {
+    color: rgb(42, 12, 59);
+    font-size: 40px;
+    font-weight: bolder;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
 
-/* .contact-form-container {
-    border: 1px solid black;
-    width: 100%;
-    min-height: 100vh;
-} */
+.scroll-to-top #scroll-btn:hover {
+    transform: translate(0px, -5px);
+    color: #8f3ddb;
+    transition: 0.5s;
+}
+
+.scroll-to-top p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
 
 @media (max-width: 650px) {
     .nav {
