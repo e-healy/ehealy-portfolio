@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ellie Healy</title>
+    <link rel="canonical" href="http://www.e-healy.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ellie Healy">
+    <meta property="og:image" content="./img/Logo.jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="./script.js" defer></script>
-    <title>Ellie Healy</title>
 </head>
 
 <header class="header">
@@ -181,7 +185,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact-container">
                 <div class="contact-title">
                     <h3>CONTACT</h3>
@@ -199,23 +203,41 @@
                         <span id="min">00</span>
                     </div>
                 </div>
-                <!-- <div class="contact-form-container"></div> -->
+                <div class="contact-form-container">
+                    <form>
+                        <div class="form-name">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-email">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-message">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" placeholder="How can I help?"></textarea>
+                        </div>
+                        <div class="form-btn">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
 
             </div>
 
         </section>
-    </main>
 
-    <footer class="footer">
-        <div class="footer-item">
-            <p>© 2024 Ellie Healy. All rights reserved.</p>
-        </div>
-        <div class="footer-links">
-            <a href="#">Github</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Codepen</a>
-        </div>
-    </footer>
+        <footer class="footer">
+            <div class="footer-item">
+                <p>© 2024 Ellie Healy. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Github</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Codepen</a>
+            </div>
+        </footer>
+    </main>
     
 </body>
 </html>
