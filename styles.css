@@ -20,7 +20,6 @@ html {
 
 body {
     font-family: "Playfair Display", sans-serif;
-    min-height: 100vh;
     padding-top: 60px;
 }
 
@@ -210,7 +209,7 @@ body {
 
 /* About Section */
 .about-container {
-    padding: 30px 0 100px;
+    padding: 30px 0 30px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -339,7 +338,7 @@ body {
 }
 
 .project-title {
-    padding-top: 100px; 
+    padding-top: 80px; 
     padding-bottom: 30px;
     border-top-left-radius: 80%;
     border-top-right-radius: 80%;
@@ -503,8 +502,6 @@ body {
 .modal-body span {
     background: rgba(135, 31, 204, 0.2);
     font-weight: bold;
-    
-
 }
 
 .modal-tags {
@@ -553,13 +550,12 @@ body {
 }
 
 .footer {
-    border-top: 2px solid rgb(40, 12, 59);
-    margin: 0 30px;
     padding: 50px;
     display: flex;
     font-size: 19px;
     justify-content: space-between;
-    color: rgb(57, 17, 83);
+    background-color: rgb(57, 17, 83);
+    color: #fff;
     font-weight: 500;
 }
 
@@ -577,7 +573,7 @@ body {
 
 .footer-links a:hover {
     opacity: 1;
-    color: rgb(0, 0, 0);
+    color: rgb(175, 175, 175);
     transition: 0.5s;
 }
 
@@ -599,12 +595,8 @@ body {
 
 /* Contact Title and Clock */
 
-/* .contact {
-    position: relative;
-} */
-
 .contact-container {
-    padding: 30px 0 30px;
+    padding: 40px 0 30px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -614,7 +606,6 @@ body {
 }
 
 .contact-title {
-    padding-top: 100px; 
     padding-bottom: 30px;
 }
 
@@ -732,6 +723,12 @@ form button {
     min-width: 150px;
     margin: 10px auto 0;
     border-radius: 30px;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: rgb(64, 18, 95);
+    transition: 0.3s;
 }
 
 /* Scroll to top button */
@@ -763,7 +760,7 @@ form button {
 
 .scroll-to-top p {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 
@@ -793,6 +790,92 @@ form button {
     .hamburger {
         display: block;
     }
+
+    .hero-title h1 {
+        font-size: 95px;
+    }
+
+    .hero-title h2 {
+        font-size: 80px;
+    }
+
+    .hero-description p {
+        font-size: 23px;
+        margin: 30px auto;
+        max-width: 450px;
+    }
+
+    .contact-container, .project-container, .about-container {
+        max-width: 600px;
+    }
+
+    .card-item {
+        max-width: 400px;
+    }
+
+    .card-item img {
+        max-width: 300px;
+        max-height: 250px;
+    }
+
+    .card-item h4 {
+        border-bottom: 1px solid gray;
+        font-weight: 800;
+        font-size: 23px;
+    }
+
+    .card-btn {
+        padding: 5px 10px;
+        margin-top: 10px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 900;
+        border-radius: 6px;
+    }
+
+    .contact-form-container {
+        max-width: 440px;
+    }
+
+    form input, form textarea {
+        min-width: 350px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .hero-title {
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    .hero-title h1 {
+        font-size: 80px;
+    }
+
+    .hero-title h2 {
+        font-size: 70px;
+    }
+
+    .hero-description p {
+        font-size: 22px;
+        margin: 40px;
+        max-width: 450px;
+    }
+
+    .contact-form-container {
+        max-width: 350px;
+    }
+
+    
 }
 
 
