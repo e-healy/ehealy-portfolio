@@ -388,12 +388,6 @@ body {
     color: rgb(40, 12, 59);
 }
 
-.card-item h4 {
-    border-bottom: 1px solid gray;
-    font-weight: 800;
-    font-size: 35px;
-}
-
 .card-item .modal-btn {
     border: none;
     outline: none;
@@ -411,35 +405,6 @@ body {
 .card-item img:hover {
     transform: scale(1.03)
 
-}
-
-.card-btn {
-    padding: 10px 20px;
-    margin-top: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 900;
-    border-radius: 6px;
-}
-
-#codeBtn1, #codeBtn2 {
-    background-color:#e0c3fc;
-    transition: 0.5s;
-}
-
-#liveBtn1, #liveBtn2 {
-    background-color:#e0c3fc;
-    transition: 0.5s;
-}
-
-#codeBtn1:hover, #codeBtn2:hover {
-    background-color: #b667ff;
-    transition: 0.5s;
-}
-
-#liveBtn1:hover, #liveBtn2:hover {
-    background-color: #b667ff;
-    transition: 0.5s;
 }
 
 .modal {
