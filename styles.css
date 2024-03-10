@@ -241,6 +241,7 @@ body {
 
 .about-title p span {
     background-color: rgba(135, 31, 204, 0.2);
+
 }
 
 .about-container .about-content {
@@ -251,6 +252,10 @@ body {
     gap: 40px;
     font-size: 20px;
     margin: 0 60px;
+}
+
+.about-content p span {
+    font-weight: 600;
 }
 
 .about-icons {
