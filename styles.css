@@ -115,6 +115,18 @@ body {
     transform: translateY(-7px) rotate(-45deg);   
 }
 
+/* .reveal {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 1s ease;
+} */
+
 .hero-container {
     background-color: #fff;
     color: rgb(51, 16, 75);
@@ -220,7 +232,7 @@ body {
 .about-title {
     /* border-top: 2px solid rgb(119, 37, 173); */
     padding-top: 100px; 
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .about-title h3 {
@@ -241,7 +253,27 @@ body {
 
 .about-title p span {
     background-color: rgba(135, 31, 204, 0.2);
+}
 
+
+.about-cv {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cv-btn {
+    background-color: #e0c3fc;
+    padding: 15px;
+    border: 1px solid rgb(40, 12, 59);
+    border-radius: 20px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.cv-btn:hover {
+    box-shadow: 4px 4px 1px rgb(40, 12, 59);
+    transition: 0.3s;
 }
 
 .about-container .about-content {
@@ -325,6 +357,14 @@ body {
     background-color: rgba(135, 31, 204, 0.2);
     padding: 7px;
     border-radius: 4px;
+    border: 1px solid rgb(40, 12, 59);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.skillset-content p:hover {
+    box-shadow: 4px 4px 1px rgb(40, 12, 59);
+    transition: 0.4s;
 }
 
 /* Project Section */
@@ -456,7 +496,7 @@ body {
 }
 
 .modal-body {
-    padding: 20px 30px;
+    padding: 15px 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -843,6 +883,10 @@ form button:hover {
 
     .contact-form-container {
         max-width: 350px;
+    }
+
+    form input, form textarea {
+        min-width: 300px;
     }
 
     
