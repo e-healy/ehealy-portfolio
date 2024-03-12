@@ -227,23 +227,26 @@
                     </div>
                 </div>
                 <div class="contact-form-container">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <div class="form-name">
                             <label for="name">Name</label>
-                            <input type="text" id="name" autocomplete="given-name" required>
+                            <input type="text" name="Name" id="name" autocomplete="given-name" required>
                         </div>
                         <div class="form-email">
                             <label for="email">Email</label>
-                            <input type="email" id="email" autocomplete="given-email" required>
+                            <input type="email" name="Email" id="email" autocomplete="given-email" required>
                         </div>
                         <div class="form-message">
                             <label for="message">Message</label>
-                            <textarea id="message" rows="5" placeholder="How can I help?" autocomplete="off"></textarea>
+                            <textarea id="message" name="Message" rows="5" placeholder="How can I help?" autocomplete="off"></textarea>
                         </div>
                         <div class="form-btn">
                             <button type="submit">Send</button>
                         </div>
                     </form>
+                    <div class="send-msg-container">
+                        <span id="send-msg"></span>
+                    </div>
                 </div>
             </div>
         </section>

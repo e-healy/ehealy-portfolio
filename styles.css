@@ -773,6 +773,16 @@ form button:hover {
     margin-bottom: 30px;
 }
 
+.send-msg-container {
+    margin: 20px 100px 0;
+}
+
+#send-msg {
+    color: rgb(40, 12, 59);
+    font-weight: bold;
+    padding: 20px 0;
+}
+
 
 
 @media (max-width: 650px) {

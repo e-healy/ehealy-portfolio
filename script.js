@@ -112,3 +112,22 @@ scrollToTopBtn.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+
+// Contact Form 
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzHj5m0245QGue0OKr4cVcA4T9PUtZ3jARe6My0plunTBL7TzNb02bIb4bCBcneiWWl/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("send-msg")
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!"
+        setTimeout(function() {
+            msg.innerHTML = "";
+        },5000);
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+})
+
